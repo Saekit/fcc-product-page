@@ -2,6 +2,42 @@ html,
 body {
   height: 100%;
 }
+#header {
+  display: flex;
+  flex-direction: row;
+}
 #header-img {
-  position: absolute;
+  background-color: lightBlue;
+  height: 22vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+#header-img img {
+  padding: 20px;
+  height: 15vh;
+}
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 5px;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  color: black;
+}
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+.nav-link a:hover {
+  color: blue;
 }
