@@ -5,11 +5,11 @@ body {
 #header {
   display: flex;
   flex-direction: row;
+  /* background-color: lightBlue; */
+  height: 22vh;
+  width: 98vw;
 }
 #header-img {
-  background-color: lightBlue;
-  height: 22vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
 }
@@ -21,9 +21,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
   padding: 5px;
+  width: 100%;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 .nav-link {
   text-decoration: none;
@@ -40,4 +42,8 @@ body {
 }
 .nav-link a:hover {
   color: blue;
+}
+.products img {
+  width: 200px;
+  height: auto;
 }
