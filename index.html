@@ -13,28 +13,64 @@
 
   <body>
     <header id="header">
-      <div id="header-img">
-        <img src="/images/pandabunny.png" alt="logo" />
+      <div id="header-head">
+        <img id="header-img" src="/images/pandabunny.png" alt="logo" />
         <h1>Panda-Bunny Sticker Shop</h1>
       </div>
       <nav id="nav-bar">
-        <li class="nav-link"><a href="#">Home</a></li>
-        <li class="nav-link"><a href="#">Stickers</a></li>
-        <li class="nav-link"><a href="#">Sticker Requests</a></li>
+        <li><a href="#email" class="nav-link">Email</a></li>
+        <li><a href="#stickers" class="nav-link">Stickers</a></li>
+        <li><a href="#video" class="nav-link">Video</a></li>
       </nav>
     </header>
 
     <main>
-      <div><h2>Our Products</h2></div>
-      <div class="products">
-        <h3>Animal Stickers</h3>
-        <img src="/images/catanimalsstickers.jpg" alt="logo" />
-        <h3>Cute Hamsters</h3>
-        <img src="/images/hamtarostickers.jpg" alt="logo" />
-        <h3>Cute Foods</h3>
-        <img src="/images/bakedstickers.jpg" alt="logo" />
+      <div id="email-container">
+        <h2>Add your email to our mailing list:</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+      <div id="stickers">
+        <div id="products">
+          <h2>Our Products</h2>
+          <h3>Animal Stickers</h3>
+          <img src="/images/catanimalsstickers.jpg" alt="logo" />
+          <h3>Cute Hamsters</h3>
+          <img src="/images/hamtarostickers.jpg" alt="logo" />
+          <h3>Cute Foods</h3>
+          <img src="/images/bakedstickers.jpg" alt="logo" />
+        </div>
+      </div>
+      <div id="video-container">
+        <h2>Product Video</h2>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KSxa4P_JoaI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </main>
+
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Not actual products, images do not belong to me</span>
+    </footer>
 
     <script src="index.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
